@@ -1,0 +1,16 @@
+.navbar{
+    background-color:white;
+    border-bottom:solid 1px;
+    border-bottom-width: thin;
+    border-bottom-style:inset;
+
+}
+nav{
+    color:#169b52;
+}
+.footer{
+    background-color:white;
+    border-top:solid 1px;
+    border-top-width: thin;
+    border-top-style:outset;
+}
