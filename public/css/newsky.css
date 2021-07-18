@@ -1,16 +1,139 @@
 .navbar{
-    background-color:white;
+    background-color:#D8E1F3;
     border-bottom:solid 1px;
     border-bottom-width: thin;
     border-bottom-style:inset;
-
 }
 nav{
-    color:#169b52;
+    color:#6B59AF;
+    background-color:#CF51B5;
 }
+.navbar-nav2{
+    background-color:#E5017E;
+    color: white;
+}
+.nav-link{
+color: #DAF7F7;
+}
+.nav-margin{
+    margin-bottom:50px;
+    height:90px;
+}
+
 .footer{
-    background-color:white;
     border-top:solid 1px;
     border-top-width: thin;
     border-top-style:outset;
+    background-color:#D8E1F3;
 }
+.content{
+    
+    
+   
+}
+body{
+    background-color:#DFE7F5;
+}
+.carttag{
+    background-color: #D8E1F3;
+}
+.cartheader{
+    color: #6A58AE;
+}
+.cartheader2{
+font: status-bar;
+font-size:150%;
+font-style:normal;
+font-family: cursive;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 430px;
+    padding: 15px;
+    margin: auto;
+  }
+  
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+  
+  .form-signin .form-floating:focus-within {
+    z-index: 2;
+  }
+  
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+ /* Carousel base class */
+.carousel {
+  margin-bottom: 1rem;
+  
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 1%;
+  z-index:5;
+   color:black;
+   
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height:400px;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  
+}
+ .bd-placeholder-img {
+        font-size: 100%;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        margin-top: 15px;
+       
+      }
+      .productIMG{
+        width:50%;
+        height: 150px;
+        
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+          margin-top: 10px;
+        }
+        .logo{ 
+            width: 400px;
+            height: 130px;
+        }
+ 
+      }
+@media only screen and (max-width: 767px){
+
+    .logo{
+    width:90%;
+    }
+    .navbar-nav2{
+       padding-left: 5%;
+    }
+    .searchform{
+    display: none;
+    }
+
+}
+

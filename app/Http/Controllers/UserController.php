@@ -11,7 +11,12 @@ class UserController extends Controller
     //user loging function
     function login(request $req){
         $user = User::where(['email'=>$req->email])->first();
-        if (!$user || !Hash::check($req->password,$user->password))
+        if (!$user){
+            $message= ['status'=>'error','message'=>'User with this email Does not Exist'];
+            $req->session()->put('message',$message);
+        return back();
+        }
+        if(!Hash::check($req->password,$user->password))
         {
             $message= ['status'=>'error','message'=>'Incorrect Email or Password'];
             $req->session()->put('message',$message);

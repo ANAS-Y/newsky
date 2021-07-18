@@ -1,81 +1,54 @@
 
 @extends('dashboard')
 @section('content')
-<main style="margin-top:100px;">
-  <div class=" marketing" style="width:90%;margin:0 auto;">
+<div class="content">
+  <div class=" marketing" style="width:95%;margin:0 auto;">
 
-     <div class="row">
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Heading</h2>
-        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Heading</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-
-
-    <!-- START THE FEATURETTES -->
-
+       <div class="row align-items-md-stretch"> <!-- row1 start here -->
+      <div class="col-md-6 mb-2" >
+      <div class="h-100 p-5 border bg-light rounded-3" >
+        <i class="bi-person-circle" style="font-size: 6em;  float: right;"></i>
+         <h2 style=" font-family:serif; color: #6A58AE;">Website Administrators</h2>
+        <p>Here you can view, add, delete or change the role of website administrator.</p>
+          <a class="btn btn btn-outline-secondary"  href="administrator" type="button">Click here to proceed</a >
+        </div>
+      </div>
+      
+      <div class="col-md-6 mb-2">
+        <div class="h-100 p-5 border rounded-3 bg-light">
+        <i class="bi-bank" style="font-size: 6em;  float: right;"></i>
+          <h2 style=" font-family:serif; color: #6A58AE;">Product and Services</h2>
+          <p>Here you can view available product, add new product, delete or modify product details.</p>
+          <a class="btn btn-outline-secondary"  href="admin_product" type="button">Click here to proceed</a >
+           </div>
+      </div>
+    </div> <!-- row1 close here -->
     <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+    
+    <div class="row align-items-md-stretch"> <!-- row2 start here -->
+      <div class="col-md-6 mb-2">
+        <div class="h-100 p-5  border bg-light rounded-3">
+        <i class="bi-cart-fill" style="font-size: 6em;  float: right;"></i>
+          <h2 style=" font-family:serif; color: #6A58AE;">Customer Orders</h2>
+        <p>Here you can view, delete or change the status of customers order.</p>
+          <a class="btn btn-outline-secondary" href="/admin_order" type="button">Click here to proceed</a >
+        </div>
       </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+      
+      <div class="col-md-6 mb-2">
+        <div class="h-100 p-5  bg-light rounded-3">
+        <i class="bi-people-fill" style="font-size: 6em; color:black; float: right;"></i>
+          <h2 style=" font-family:serif; color: #6A58AE;">Organization Details</h2>
+          <p>Here you can view organisation details and available staff, add new organisation or staff details and also delete or modify some details.</p>
+          <a class="btn btn-outline-secondary" href="organisation" type="button">Click here to proceed</a >
+           </div>
       </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
+    </div> <!-- row2 close here -->
+    
     <!-- /END THE FEATURETTES -->
 
   </div><!-- /.container -->
 
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-</main>
+</div>
   @endsection

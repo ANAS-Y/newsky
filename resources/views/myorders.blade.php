@@ -1,33 +1,5 @@
 @extends('master')
 @section('content')
-<style>
- /* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-  background-color:gray;
-   color:black;"
-}
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 20rem;
-}
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 10rem;
-}
-  </style>
 <main style="margin-top:100px;"> 
   <div class="container marketing">
 

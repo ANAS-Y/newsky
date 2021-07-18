@@ -1,11 +1,10 @@
-@extends('master')
+@extends('dashboard')
 @section('content')
 <div class="content">
-<br />
-<div class=" container h-100 p-5 border  rounded-3" style="background-color:#D8E1F3;margin-bottom: 1%;" >
-<h2 class="p-2 rounded-3"style=" font-family:serif; color:white;text-align: center; background-color:#6A58AE ;">USER REGISTRATION</h2>
+<div class=" container h-100 p-5 border  rounded-3" style="background-color:#D8E1F3; margin-bottom:1%;" >
+<h2 class="p-2 rounded-3"style=" font-family:serif; color:white;text-align: center; background-color:#6A58AE ;">ADMIN REGISTRATION</h2>
     
-    <form action="/registeruser" method="POST">
+    <form action="/add_admin" method="POST">
     @csrf
     <div class="row mb-1">
     <div class="col-md-2">

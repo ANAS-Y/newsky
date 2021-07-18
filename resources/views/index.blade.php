@@ -5,9 +5,9 @@
 <div class="container-fluid">
 
 <div class="row align-items-md-stretch"> <!-- row1 start here -->
-      <div class="card mb-3 border p-2 rounded-3" style="background-color:#D8E1F3; margin-top:2em;" >
+      <div class="card mb-3 border  rounded-3" style="background-color:#D8E1F3;" >
       <div class="h-100 p-2" >
-<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+<div id="myCarousel" class="carousel slide img-fluid" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -27,9 +27,9 @@
       </div>
     
     @foreach($products as $item)
-      <div class="carousel-item">
-      <img class="bd-placeholder-img"  src="{{$item['gallery']}}" >     
-          <div class="carousel-caption text-start">
+      <div class="carousel-item img-fluid">
+      <img class="bd-placeholder-img img-fluid"  src="{{$item['gallery']}}" >     
+          <div class="carousel-caption text-start img-fluid">
             <h1>{{$item['name']}}</h1>
             <p>{{$item['description']}}</p>
             
@@ -90,7 +90,7 @@
 
     <div class="row">
       <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">Itâ€™ll blow your mind.</span></h2>
+        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
         <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
       </div>
       <div class="col-md-5">
