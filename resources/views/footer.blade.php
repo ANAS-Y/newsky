@@ -5,6 +5,8 @@
   padding: 0 15px;
 }
 </style>
+</div>
+</div>
 <footer class="footer mt-auto py-3 "  >
   <div class="container">
     <span class="text-muted">

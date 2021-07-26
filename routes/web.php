@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\adminController;
+use App\Http\Controllers\SendEmailController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +18,7 @@ use App\Http\Controllers\adminController;
 
 Route::get('/login', function () {return view('login');});
 Route::get('/logout', function () {Session::forget('user');Session::forget('admin'); return redirect('/');});
+Route::get('/forgot_password', function () {return view('forgot_password');});
 Route::post("/login",[UserController::class, 'login']);
 Route::get("/",[ProductController::class, 'index']);
 Route::post("/detail",[ProductController::class, 'detail']);
@@ -55,7 +57,8 @@ Route::post('/edit_staff',[adminController::class, 'edit_staff']);
 Route::post('/save_staff',[adminController::class, 'update_staff']);
 Route::get('/delete_staff/{id}',[adminController::class, 'delete_staff']);
 Route::get('/contact',[adminController::class, 'organisation3']);
-
+Route::get('/mail', function () {return view('mail');});
+Route::post('/sendemail',[SendEmailController::class, 'send']);
 
 
 

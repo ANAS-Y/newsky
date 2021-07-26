@@ -36,11 +36,11 @@ return [
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
-            'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
-            'port' => env('MAIL_PORT', 587),
+            'host' => env('MAIL_HOST', 'mail.newsky.com.ng'),
+            'port' => env('MAIL_PORT', 465),
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-            'username' => env('MAIL_USERNAME'),
-            'password' => env('MAIL_PASSWORD'),
+            'username' => env('info@newsky.com.ng'),
+            'password' => env('@Newsky123'),
             'timeout' => null,
             'auth_mode' => null,
         ],
@@ -84,8 +84,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('info@newsky.com.ng', 'info@newsky.com.ng'),
+        'name' => env('New Sky Technologies', 'New Sky Technologies'),
     ],
 
     /*

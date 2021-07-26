@@ -25,7 +25,7 @@
       <label>
         <input type="checkbox" value="remember-me"> Remember me
       </label>
-      <a href="#" style="text-decoration: none; margin-left:%;color:#E5017E;">Forgot Password</a> <a style="text-decoration: none;margin-left:3%; "href="#">Register</a>
+      <a href="forgot_password" style="text-decoration: none; margin-left:%;color:#E5017E;">Forgot Password</a> <a style="text-decoration: none;margin-left:3%; "href="register">Register</a>
     </div>
     <button class="w-100 btn btn-lg " style="background-color: #6A58AE; color: white;"type="submit">Sign in</button>
       </form>

@@ -71,7 +71,7 @@
   </div>
   
   <div class="col">
-    <button type="submit" class="btn form-control"  style=" background-color: #6A58AE; color: white;">Register</button>
+    <button type="submit" class="btn form-control"  style=" background-color: #6A58AE; color: white;">submit</button>
   </div>
 </form>
   </div>

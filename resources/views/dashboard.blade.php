@@ -25,10 +25,9 @@
     <title>Admin Panel</title>
   </head>
   <body>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
- 
     {{View::make('adminheader')}}
+    <div class="col mb-3"></div>
     @yield('content')
     {{View::make('footer')}}
   </body>
